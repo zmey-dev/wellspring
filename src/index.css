@@ -1,0 +1,102 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 180 98% 43%;
+    --primary-foreground: 0 0% 7%;
+
+    --secondary: 40 100% 50%;
+    --secondary-foreground: 0 0% 7%;
+
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 180 98% 43%;
+    --accent-foreground: 0 0% 7%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 180 98% 43%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 11%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 180 98% 43%;
+    --sidebar-primary-foreground: 0 0% 7%;
+    --sidebar-accent: 40 100% 50%;
+    --sidebar-accent-foreground: 0 0% 7%;
+    --sidebar-border: 0 0% 16%;
+    --sidebar-ring: 180 98% 43%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-wellspring-black text-foreground;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-wellspring-darkgray;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-wellspring-gray rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-wellspring-lightgray;
+  }
+}
+
+@layer components {
+  .wellspring-heading {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold mb-4;
+  }
+  
+  .wellspring-card {
+    @apply bg-wellspring-darkgray rounded-lg border border-wellspring-gray shadow-md hover:shadow-lg transition-all duration-300;
+  }
+  
+  .wellspring-button {
+    @apply px-4 py-2 rounded-md transition-colors duration-300;
+  }
+  
+  .wellspring-button-primary {
+    @apply bg-wellspring-teal text-wellspring-black font-medium hover:bg-opacity-90;
+  }
+  
+  .wellspring-button-secondary {
+    @apply bg-wellspring-gold text-wellspring-black font-medium hover:bg-opacity-90;
+  }
+  
+  .wellspring-button-outline {
+    @apply border border-wellspring-teal text-wellspring-teal hover:bg-wellspring-teal hover:bg-opacity-10;
+  }
+  
+  .wellspring-input {
+    @apply bg-wellspring-gray border-wellspring-lightgray text-white rounded-md px-3 py-2 focus:ring-1 focus:ring-wellspring-teal focus:border-wellspring-teal;
+  }
+}
