@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { 
@@ -37,7 +36,7 @@ const events = [
     location: "San Francisco Convention Center",
     price: "$299",
     category: "Conference",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     featured: true,
     description: "Join world-renowned health experts for a three-day summit focused on the latest advances in holistic health practices and wellness technologies."
   },
@@ -49,7 +48,7 @@ const events = [
     location: "Online Event",
     price: "$49",
     category: "Workshop",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1517637382994-f02da38c6728?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     featured: false,
     description: "A virtual series of interactive workshops covering meditation, nutrition, and stress management techniques for everyday wellness."
   },
@@ -61,7 +60,7 @@ const events = [
     location: "Chicago Convention Center",
     price: "$149",
     category: "Expo",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     featured: true,
     description: "Explore the latest in nutrition science, fitness equipment, and wellness products at this industry-leading expo."
   },
@@ -73,7 +72,7 @@ const events = [
     location: "Serenity Mountain Resort, Colorado",
     price: "$599",
     category: "Retreat",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     featured: false,
     description: "Escape the daily grind with this immersive meditation retreat in the beautiful mountains of Colorado."
   },
@@ -85,7 +84,7 @@ const events = [
     location: "Atlanta Wellness Center",
     price: "$199",
     category: "Conference",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     featured: false,
     description: "A day dedicated to women's health topics, featuring expert panels, health screenings, and networking opportunities."
   },
@@ -97,7 +96,7 @@ const events = [
     location: "Online Event",
     price: "$399",
     category: "Certification",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     featured: false,
     description: "Earn your certification in plant-based nutrition with this comprehensive two-day online program."
   }
